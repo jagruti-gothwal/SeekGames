@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h3{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center; /*vertically*/
+    justify-content: center; /*horizontally*/
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;  /*higher number forward image*/
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 1%;
+    right: 15%;
+}
+
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+}
+
+.user{
+    margin-top: 10px;
+}
+.games{
+    flex: 2;
+}
+
+.links{
+    display: flex;
+    padding: 0;
+}
+.links a{
+    color: rgb(3, 3, 59);
+    text-decoration: none;
+    cursor: pointer; 
+    flex-direction: column;
+}
+
+.links a:hover{
+    color: rgb(9, 121, 185);
+ }
+.link{
+    margin: 2rem 0rem;
+    padding: 1rem 0.5rem;
+    align-items: center;
+  
+}
+
+.link h2{
+    margin: 0rem 2rem;
+}
+
+.pro{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 8px;
+    border-radius: 2rem;
+}
+
+.pro img{
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+
+.pro h2{
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+.status{
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px 150px;
+    background-color: #fdfeff;
+    padding: 10px;
+  }
